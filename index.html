@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
+   <style type="text/css">
+  .cc
+{
+margin-top:60px;
+margin-left:350px;
+width:400px;
+height:610px;
+border:14px solid maroon;
+}
+#tex
+{
+width:374px;
+height:70px;
+border:8px solid maroon;
+}
+.bt
+{
+padding-left:35px;
+padding-right:35px;
+}
+.B6
+{
+padding-left:27px;
+padding-right:27px;
+}
+.ds
+{
+padding-top:40px;
+padding-left:20px;
+padding-right:20px;
+display:flex;
+justify-content:space-around;
+}
+@media(max-width:768px)
+{
+.cc
+{
+width:400px;
+margin-left:30px;
+}
+#tex
+{
+width:374px;
+height:70px;
+margin:0;
+}
+}
+ </style>
+</head>
+<body>
+<div class="cc">
+<form name="ff">
+<input typ="text" id="tex" name="tg" placeholder=" 0 ">
+</form>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark  bt bt1">1</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt2  bt ">2</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt3  bt ">3</button></div>
+</div>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt4  bt ">4</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt5  bt ">5</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt6  bt ">6</button></div>
+</div>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt7 bt">7</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt8 bt">8</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt9  bt ">9</button></div>
+</div>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt bt10">+</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt bt11">_</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt bt12">*</button></div>
+</div>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt B1">0</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt B2">/</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-success bt B3">=</button></div>
+</div>
+<div class="row ds">
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-danger bt B4">c</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-dark bt B5">.</button></div>
+<div  class="col-md-3 col-sm-3  col-3"  ><button class="btn btn-primary bt B6">back</button></div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.bt1').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"1");
+});
+$('.bt2').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"2");
+});
+$('.bt3').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"3");
+});
+$('.bt4').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"4");
+});
+$('.bt5').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"5");
+});
+$('.bt6').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"6");
+});
+$('.bt7').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"7");
+});
+$('.bt8').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"8");
+});
+$('.bt9').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"9");
+});
+$('.bt10').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"+");
+});
+$('.bt11').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"-");
+});
+$('.bt12').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"*");
+});
+$('.B1').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"0");
+});
+$('.B2').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+"/");
+});
+$('.B3').click(function(){
+var x=ff.tg.value;
+var ans=eval(ff.tg.value);
+$('#tex').val(ans);
+});
+$('.B4').click(function(){
+$('#tex').val(" ");
+});
+$('.B5').click(function(){
+var x=ff.tg.value;
+$('#tex').val(x+".");
+});
+$('.B6').click(function(){
+var x=ff.tg.value;
+j=x.length;
+y=x.slice(0,j-1);
+$('#tex').val(y);
+});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
